@@ -1,9 +1,9 @@
 package rp;
 //By Michael Nicholas
 public class Item {
-	String name;
-	String description;
-	int weight;
+	public String name;
+	public String description;
+	public int weight;
 //constructor for item class. defines item name, description, and weight.
  public Item (String itemName, String examineDescription, int Weight){
 	itemName = name;
@@ -12,8 +12,7 @@ public class Item {
 	 
  }
 //allows for super constructor in armor, weapon, and food classes
- public Item (){
-	 
+ public Item (){ 
  }
 	//sets the name of the item in question
 	private void setName(String name){
@@ -24,17 +23,20 @@ public class Item {
 		return name;
 	}
 	//sets the description of the item in question
-	private void setExamineDescription(String, Int){
-	String examineDescription = 	
+	private void setExamineDescription(String Int){
+		String examineDescription = description;
+		int Weight = weight;	
 	}
-	//returns a string descripition of the item in question
+	//returns a string description of the item in question
 	private String getExamineDescription(){
-		return(String name, Int Weight);
+		return(description);
 	}
 	//gets the integer value for the weight of the item
 	private int getWeight (){
-	return (Weight);
+	return(weight);
 	}
 	//sets the integer value for the weight of the item
-	private void setWeight(int){
-	}
+	private void setWeight(int Weight){
+	Weight = weight;
+}
+}
