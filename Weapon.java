@@ -1,26 +1,22 @@
 package rp;
 
 public class Weapon extends Item{
-	public String weaponDescription;
 	public int Damage;
 //constructor for the weapon class, defines weapon description and weapon damage
-public Weapon (String weaponExamineDescription, int weaponDamage){
-	weaponExamineDescription = weaponDescription;
-	weaponDamage = Damage;
+public Weapon (String itemName, int Weight, int weaponDamage){
+	this.Damage = weaponDamage;
+	this.weight = Weight;
+	this.name = itemName;
 }
 //sets the integer value for the amount of damage the weapon deals
-	private void setDamage(String weaponDamage){
+	public void setDamage(int weaponDamage){
+		this.Damage = weaponDamage;
 	}
 //gets the integer value for the amount of damage the weapon deals
-	private int getDamage(){
-		return(Damage);
+	public int getDamage(){
+		return this.Damage;
 }
-//sets the weapon description as a String so that it shows up when examined	
-	private void setWeaponExamineDescription(String weaponExamineDescription){
-		
-	}
-//gets the weapon description
-	private String getWeaponExamineDescription(){
-		return (weaponDescription);
+	public void examineWeaponDescription(){
+		System.out.println("This is a " + this.name + ". It has a weight of " + this.weight + " kilograms. It deals " + this.Damage + " damage in one swing!" );
 	}
 }

@@ -23,7 +23,7 @@ public class Item {
 	}
 	//sets the description of the item in question
 	public void examineDescription(){
-		System.out.println("This is a " + this.name + ". It has a weight of " + this.weight + "." );
+		System.out.println("This is a " + this.name + ". It has a weight of " + this.weight + " kilograms." );
 	}
 	//gets the integer value for the weight of the item
 	public int getWeight (){

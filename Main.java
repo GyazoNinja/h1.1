@@ -4,22 +4,19 @@ public class Main {
 
 	public static void main(String [] args){
 
-		Item Box = new Item("Box", 100);
+		Item Box = new Item("Heavy Box", 100);
 		Box.examineDescription();
-		Box.getName();
-		System.out.println(Box.getWeight());
 		
-		Weapon BroadSword = new Weapon ("A heavy, two handed sword.", 100);
-		System.out.println(BroadSword.getDamage());
-		System.out.println(BroadSword.getWeaponExamineDescription());
+		Weapon BroadSword = new Weapon ("BroadSword", 15, 100);
+		BroadSword.examineWeaponDescription();
 		
-		Armor Chainmail = new Armor("A thin, see-through plating that covers your torso.", 50);
-		System.out.println(Chainmail.getResistance());
-		Chainmail.getArmorDescription();
+		Food Apple = new Food("Apple", 5, 10, 10);
+		Apple.examineFoodDescription();
 		
-		Food Apple = new Food("A tasty snack found on a local farm.", 10, 10);
-		System.out.println(Apple.getQuantity());
-		System.out.println(Apple.getFoodExamineDescription());
+		Armor ChainmailChestplate = new Armor("Chainmail Chestplate", 50, 62);
+		ChainmailChestplate.examineArmorDescription();
+		
+		
 	}
 
 }

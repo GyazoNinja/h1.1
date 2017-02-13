@@ -1,29 +1,24 @@
 package rp;
 
 public class Armor extends Item{
-	
-public int Resistance;
-public String armorDescription;
+public int resistance;
 //constructor for the armor class, defines description and resistance
-public Armor(String armorExamineDescription, int armorResistance){
-	armorExamineDescription = armorDescription;
-	armorResistance = Resistance;
+public Armor(String itemName, int Weight, int armorResistance){
+	this.name = itemName;
+	this.weight = Weight;
+	this.resistance = armorResistance;
 }
 
 //sets the resistance value of the armor as an integer
-	private void setResistance(int Resistance){
-		int armorResistance = Resistance;
+	public void setResistance(int armorResistance){
+	this.resistance = armorResistance;
 }
 //gets the resistance value of the armor
-	private int getResistance(){
-		return (Resistance);
+	public int getResistance(){
+		return this.resistance;
 	}
-//sets the armor description of the armor when it is examined	
-	private void setArmorDescription(String armorDescription){	
-		String armorExamineDescription = armorDescription;
+	public void examineArmorDescription(){
+		System.out.println("This piece of armor is a " + this.name + ". It has a weight of " + this.weight + " kilograms. It has a protection value of " + this.resistance + "." );
 	}
-//gets the armor description and displays it when examined	
-	private String getArmorDescription(){
-		return (armorDescription);
-	}
+
 }
