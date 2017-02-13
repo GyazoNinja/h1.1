@@ -1,8 +1,14 @@
 package rp;
 
-public class Armor {
+public class Armor extends Item{
+	
 int Resistance;
 String armorDescription;
+//constructor for the armor class, defines description and resistance
+public Armor(String armorExamineDescription, int armorResistance){
+	armorExamineDescription = armorDescription;
+	armorResistance = Resistance;
+}
 
 //sets the resistance value of the armor as an integer
 	private void setResistance(Resistance){

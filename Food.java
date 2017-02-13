@@ -1,10 +1,15 @@
 package rp;
 
-public class Food {
+public class Food extends Item{
 	int nutrition;
 	int quantity;
-	String foodExamineDescription;
-	
+	String foodDescription;
+//constructor for the food class. defines food description, nutritional value, and quantity.
+public Food(String foodExamineDescription, int foodNutrition, int foodQuantity){
+	foodExamineDescription = foodDescription;
+	foodNutrition = nutrition;
+	foodQuantity = quantity; 
+}
 	//sets the description of the food in question as a string
 	private void setFoodExamineDescription(String){
 	}
