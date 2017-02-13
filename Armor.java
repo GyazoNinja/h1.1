@@ -5,17 +5,17 @@ int Resistance;
 String armorDescription;
 
 //sets the resistance value of the armor as an integer
-	public void setResistance(Resistance){
+	private void setResistance(Resistance){
 }
 //gets the resistance value of the armor
-	public int getResistance(){
+	private int getResistance(){
 		return (Resistance);
 	}
 //sets the armor description of the armor when it is examined	
-	public void setArmorDescription(armorDescription){	
+	private void setArmorDescription(armorDescription){	
 	}
 //gets the armor description and displays it when examined	
-	public String getArmorDescription(){
+	private String getArmorDescription(){
 		return (armorDescription);
 	}
 }
